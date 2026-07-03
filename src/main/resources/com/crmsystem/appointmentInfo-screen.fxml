@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.crmsystem.AppointmentInfoController">
+   <children>
+      <Text fx:id="txt_appointmentheadline" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Appointment">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General Information">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tf_title" layoutX="88.0" layoutY="112.0" promptText="Title" />
+      <TextField fx:id="tf_desc" layoutX="367.0" layoutY="112.0" promptText="Description" />
+      <TextField fx:id="tf_location" layoutX="88.0" layoutY="154.0" promptText="Location" />
+      <DatePicker fx:id="dp_date" layoutX="65.0" layoutY="205.0" promptText="Event Date" />
+      <TextField fx:id="tf_appid" editable="false" layoutX="527.0" layoutY="18.0" prefHeight="25.0" prefWidth="47.0" promptText="ID" />
+      <Text fx:id="txt_appid" layoutX="429.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID:" />
+      <Text layoutX="24.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer:" />
+      <Text layoutX="52.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User:" />
+      <ComboBox fx:id="cb_customer" layoutX="87.0" layoutY="260.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_user" layoutX="87.0" layoutY="303.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_contact" layoutX="87.0" layoutY="346.0" prefWidth="150.0" />
+      <Text layoutX="34.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" />
+      <TextField fx:id="tf_type" layoutX="367.0" layoutY="154.0" promptText="Type" />
+      <Button fx:id="btn_save" layoutX="421.0" layoutY="345.0" mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
+      <Button fx:id="btn_cancel" layoutX="484.0" layoutY="345.0" mnemonicParsing="false" onAction="#onCancelButtonClick" text="Cancel" />
+      <TextField fx:id="tf_starttime" layoutX="311.0" layoutY="205.0" prefHeight="25.0" prefWidth="88.0" promptText="HH:MM" />
+      <TextField fx:id="tf_endtime" layoutX="429.0" layoutY="205.0" prefHeight="25.0" prefWidth="88.0" promptText="HH:MM" />
+      <Text layoutX="409.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
+      <Text layoutX="54.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" />
+      <Text layoutX="31.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+      <Text layoutX="294.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+      <Text layoutX="329.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" />
+      <Text layoutX="29.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+      <Text layoutX="274.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" />
+   </children>
+</AnchorPane>
